@@ -4,21 +4,18 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import * as Si from 'react-icons/si';
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
-  SiReact: Si.SiReact,
-  SiTypescript: Si.SiTypescript,
-  SiVuedotjs: Si.SiVuedotjs,
-  SiNextdotjs: Si.SiNextdotjs,
-  SiTailwindcss: Si.SiTailwindcss,
-  SiSass: Si.SiSass,
-  SiNodedotjs: Si.SiNodedotjs,
+  SiOpenjdk: Si.SiOpenjdk,
   SiPython: Si.SiPython,
-  SiPostgresql: Si.SiPostgresql,
-  SiMongodb: Si.SiMongodb,
+  SiSpringboot: Si.SiSpringboot,
+  SiSpring: Si.SiSpring,
+  SiThealgorithms: Si.SiThealgorithms,
+  SiMysql: Si.SiMysql,
+  SiRedis: Si.SiRedis,
   SiDocker: Si.SiDocker,
+  SiApache: Si.SiApache,
   SiGit: Si.SiGit,
-  SiFigma: Si.SiFigma,
-  SiVite: Si.SiVite,
-  SiGraphql: Si.SiGraphql,
+  SiLinux: Si.SiLinux,
+  SiLangchain: Si.SiLangchain,
 };
 
 export default function Skills() {
