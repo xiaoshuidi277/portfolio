@@ -20,9 +20,11 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: FiGithub, href: profile.social.github, label: 'GitHub' },
-    { icon: FiLinkedin, href: profile.social.linkedin, label: 'LinkedIn' },
     { icon: FiMail, href: `mailto:${profile.social.email}`, label: 'Email' },
   ];
+  if (profile.social.linkedin) {
+    socialLinks.splice(1, 0, { icon: FiLinkedin, href: profile.social.linkedin, label: 'LinkedIn' });
+  }
 
   return (
     <section id="contact" className="section-container">
